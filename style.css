@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   font-family: "Texturina", serif;
   scroll-behavior: smooth;
@@ -119,12 +118,10 @@ main .right-side {
   width: 55%;
 }
 
-
 main .right-side img {
   max-width: 100%;
   height: auto;
 }
-
 
 .best-menu {
   height: 80vh;
@@ -141,14 +138,14 @@ main .right-side img {
   color: #fff;
   border: none;
   background-color: #51b788;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   display: block;
   font-size: 1.5rem;
   margin: 0 auto;
   outline: none;
   padding: 10px 1rem;
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .button-primary:hover {
@@ -201,15 +198,15 @@ main .right-side img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 4rem;
+  /* justify-content: space-between; */
+  margin-top: 3rem;
+  padding-left: 195px;
 }
 
 .best-menu .menu div.menu-item {
-  width: 200px;
-  height: 200px;
   border: 1px solid #ccc;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
+  margin-right: 39px;
 }
 
 .best-menu .menu div.menu-item:hover {
@@ -367,11 +364,11 @@ main .right-side img {
   color: #000;
   padding: 10px 1rem;
   border: 1px solid #ccc;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .top-class a:hover {
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .top-foods {
@@ -391,7 +388,7 @@ main .right-side img {
 }
 
 .top-foods .food-card:hover {
-  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .top-foods .food-card img {
@@ -445,7 +442,7 @@ main .right-side img {
   background-position: center;
 }
 
-.app .app-container{
+.app .app-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -527,12 +524,12 @@ main .right-side img {
   color: #fff;
   background-color: #51b788;
   padding: 10px 1rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .down a:hover {
   color: blue;
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 
 .down .ios {
@@ -622,7 +619,6 @@ main .right-side img {
   height: auto;
 }
 
-
 /* footer start here */
 
 footer {
@@ -682,243 +678,372 @@ footer .phase-2 h2 {
   font-weight: 400;
   margin-bottom: 5px;
 }
+
 /* end styling */
-
-
 
 /* media quarry */
 
+@media (max-width: 1335px) {
+  nav .logo img {
+    margin-left: 100px;
+  }
 
-@media(max-width:1200px){
-  main .left-side h1{
+  nav .booking {
+    padding-right: 50px;
+  }
+
+  main .left-side {
+    margin-left: 100px;
+  }
+
+  main .right-side img {
+    padding-right: 50px;
+  }
+
+  .load-btn button {
+    margin-top: 120px;
+  }
+
+  .app .app-info img {
+    width: 500px;
+    height: 500px;
+    margin-left: 185px;
+  }
+}
+@media (max-width: 1098px) {
+  .app .app-info img {
+    width: 350px;
+    height: 350px;
+    margin-left: 250px;
+  }
+
+  nav {
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+  }
+
+  nav .logo img {
+    margin-left: -500px;
+    margin-top: 10px;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .icon {
+    flex-direction: column;
+    list-style-type: none;
+    display: none;
+  }
+
+  .booking {
+    list-style-type: none;
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .left-side h1 {
     font-size: 1.4rem;
   }
-  main  .left-side p{
+
+  main .left-side p {
     font-size: 0.8rem;
   }
-  .right-side img{
+
+  .right-side img {
     width: 30rem;
     height: auto;
   }
-  .menues a{
+
+  .menues a {
     width: 10rem;
     height: auto;
   }
-  .menues a>i{
+
+  .menues a > i {
     font-size: 2.4rem;
   }
-  .menues a>h1{
+
+  .menues a > h1 {
     font-size: 1.4rem;
   }
-  .top-class a{
+
+  .top-class a {
     font-size: 2rem;
   }
 }
-@media(max-width:900px){
-  .container .booking{
+@media (max-width: 900px) {
+  .container .booking {
     display: none;
   }
-  .about  img{
+
+  .about img {
     width: 22rem;
     height: auto;
   }
-  .about .about-text h1{
+
+  .about .about-text h1 {
     font-size: 1.2rem;
   }
-  .about .about-text p{
+
+  .about .about-text p {
     font-size: 0.8rem;
   }
-  .knowlege a{
+
+  .knowlege a {
     font-size: 1rem;
     padding: 0.5rem;
   }
-  .load-btn a{
+
+  .load-btn a {
     font-size: 1rem;
     padding: 0.5rem;
   }
-  .top-class a{
+
+  .top-class a {
     font-size: 1.5rem;
   }
-  .appp img{
+
+  .appp img {
     width: 20rem;
     height: auto;
   }
-  .appp .information h1{
+
+  .appp .information h1 {
     font-size: 1.5rem;
   }
-  .appp .information p{
+
+  .appp .information p {
     font-size: 0.9rem;
   }
-  .footer .phase-2 h1{
+
+  .footer .phase-2 h1 {
     font-size: 1rem;
   }
-  .footer .phase-2 h2{
+
+  .footer .phase-2 h2 {
     font-size: 0.6rem;
   }
 }
-@media(max-width:715px){
-
-
-  body{
+@media (max-width: 715px) {
+  body {
     width: 100%;
   }
-  main .left-side h1{
+
+  main .left-side h1 {
     font-size: 1rem;
   }
-  main .left-side p{
+
+  main .left-side p {
     font-size: 0.8rem;
   }
-  .right-side img{
+
+  .right-side img {
     width: 10rem;
     height: auto;
   }
-  .left-side{
+
+  .left-side {
     font-size: 0.8rem;
   }
-  .icon a{
-    font-size:0.6rem;
+
+  .icon a {
+    font-size: 0.6rem;
   }
-  .booking a{
-  display: none;
-  }
-  .booking h1{
+
+  .booking a {
     display: none;
   }
-  .best-menu  a{
+
+  .booking h1 {
+    display: none;
+  }
+
+  .best-menu a {
     font-size: 0.8rem;
     padding: 0.5rem;
   }
-  .menues a{
+
+  .menues a {
     width: 8rem;
     height: auto;
   }
-  .menues  a >i{
+
+  .menues a > i {
     font-size: 1.4rem;
   }
-  .menues a>h1{
+
+  .menues a > h1 {
     font-size: 0.5rem;
   }
-  .load-btn  a{
+
+  .load-btn a {
     font-size: 0.8rem;
     padding: 0.5rem;
   }
-  .about  img{
+
+  .about img {
     width: 20rem;
     height: auto;
   }
-  .about-text{
+
+  .about-text {
     text-align: center;
   }
-  .about .about-text h1{
+
+  .about .about-text h1 {
     font-size: 1.4rem;
   }
-  .knowlege a{
+
+  .knowlege a {
     font-size: 0.8rem;
     padding: 0.5rem;
   }
-  .collect h1{
+
+  .collect h1 {
     font-size: 1.5rem;
   }
-  .collect p{
+
+  .collect p {
     font-size: 0.8rem;
   }
-  .top-class a{
+
+  .top-class a {
     font-size: 1.5rem;
     padding: 0.6rem;
   }
-  .top-foods .food-card{
+
+  .top-foods .food-card {
     width: 10rem;
   }
-  .top-foods  .food-card img{
+
+  .top-foods .food-card img {
     width: 5rem;
     height: auto;
   }
-  .top-foods .food-card h1{
+
+  .top-foods .food-card h1 {
     font-size: 1rem;
   }
-  .top-foods .food-card h2>i{
+
+  .top-foods .food-card h2 > i {
     font-size: 0.8rem;
   }
-  .top-foods .food-card  h4{
+
+  .top-foods .food-card h4 {
     font-size: 1rem;
   }
-  .top-foods .food-card a{
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-  .top-foods .food-card  h3{
-    font-size: 1rem;
-  }
-  .more-dish a{
+
+  .top-foods .food-card a {
     font-size: 1rem;
     padding: 0.5rem;
   }
-  .appp  img{
+
+  .top-foods .food-card h3 {
+    font-size: 1rem;
+  }
+
+  .more-dish a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .appp img {
     width: 12rem;
     height: auto;
   }
-  .appp .information  h1{
+
+  .appp .information h1 {
     font-size: 1rem;
   }
-  .appp .information  p{
+
+  .appp .information p {
     font-size: 0.8rem;
   }
-  .appp .information ol>li{
+
+  .appp .information ol > li {
     font-size: 0.8rem;
     margin-top: -0.5rem;
   }
-  .down  .android h1{
+
+  .down .android h1 {
     font-size: 0.5rem;
   }
-  .down .android  a{
+
+  .down .android a {
     font-size: 1rem;
     padding: 0.5rem;
   }
-  .down  .ios h1{
+
+  .down .ios h1 {
     font-size: 0.5rem;
   }
-  .down .ios  a{
+
+  .down .ios a {
     font-size: 1rem;
     padding: 0.5rem;
   }
-  .certy h1{
+
+  .certy h1 {
     font-size: 1rem;
   }
-  .review .customer{
+
+  .review .customer {
     width: 10rem;
     height: auto;
   }
-  .review .customer .upper h1{
+
+  .review .customer .upper h1 {
     font-size: 1rem;
   }
-  .review .customer .upper h2{
+
+  .review .customer .upper h2 {
     font-size: 0.8rem;
   }
-  .review .customer .niche p{
+
+  .review .customer .niche p {
     font-size: 0.8rem;
   }
-  .review .customer .niche a{
+
+  .review .customer .niche a {
     font-size: 0.8rem;
   }
-  .many a{
+
+  .many a {
     font-size: 1rem;
     padding: 0.5rem;
   }
-  .footer img{
+
+  .footer img {
     width: 6rem;
     height: auto;
   }
-  .footer .phase-1 p{
+
+  .footer .phase-1 p {
     font-size: 0.6rem;
   }
-  .footer .phase-1 a>i{
+
+  .footer .phase-1 a > i {
     font-size: 0.8rem;
   }
-  .footer .phase-2 h1{
+
+  .footer .phase-2 h1 {
     font-size: 1rem;
   }
-  .footer .phase-2 h2{
+  
+  .footer .phase-2 h2 {
     font-size: 0.6rem;
   }
 }
+
 /* last end */

@@ -7,22 +7,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
     <header>
-        <nav class="container">
+        <nav class="container navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
             <div class="logo">
                 <a href="#"><img src="./images/1.jpg"></a>
             </div>
-            <div class="icon">
+            <div class="icon" id="js-menu">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Gallery</a>
                 <a href="#">Contact</a>
             </div>
-            <div class="booking">
+            <div class="booking" id="js-menu1">
                 <a href="#">Account</a>
                 <h1><i class="fas fa-shopping-cart"></i></h1>
                 <a href="#">Book Now</a>
@@ -47,14 +52,15 @@
             <button class="button-primary">Get Started</button>
             <h2>Enter your <span>Email</span> and <span>Location</span> for food.</h2>
         </div>
-    
+
         <section class="mast-mal container">
             <h4>Menues</h4>
             <h1>Explore our Best Menu</h1>
-            <p>Minimalist and eclectic of several recycled,raw and reworked elements invites from scratch share passion for
+            <p>Minimalist and eclectic of several recycled,raw and reworked elements invites from scratch share passion
+                for
                 cooking.</p>
         </section>
-    
+
         <section class="menu container">
 
             <div class="menu-item">
@@ -84,7 +90,7 @@
 
         </section>
     </section>
-    
+
     <section class="load-btn">
         <button class="button-primary">Load More Items</button>
         <p><span>Note</span>:All Items are pure.and Food delivered Any conditions.(Hot,Cold & Medium) </p>
@@ -114,7 +120,7 @@
             <h1>Our Food Collection</h1>
             <p>We offered you the most delicious recipe in the world.Just make order.</p>
         </div>
-    
+
         <div class="top-class container">
             <div>
                 <a href="#">All</a>
@@ -152,7 +158,7 @@
                 </h2>
                 <h4>$ 18.50</h4>
                 <a href="#"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                
+
             </div>
 
             <div class="food-card">
@@ -166,14 +172,14 @@
                     <i><img src="./icons/start-filled.svg"></i>
                 </h2>
                 <h4>$ 24.50</h4>
-                <a href="#"><i class="fas fa-shopping-cart"></i> Add To Cart</a> 
+                <a href="#"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
             </div>
         </div>
 
         <button class="button-primary">Load More</button>
         <p><span>Note</span>: In our collection you can see worldwide food dished.Jomato surve you pure veg. dishes.</p>
     </section>
-    
+
     <section class="app">
         <div class="app-container container">
             <div class="information">
@@ -198,18 +204,18 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="app-info">
                 <img src="./images/smartphone-coffee.svg">
             </div>
         </div>
 
     </section>
-    
+
     <section class="certy">
         <h2>Certificate</h2>
         <h1>What Say Custumer About Us</h1>
-    
+
         <div class="review">
             <div class="customer">
                 <div class="upper">
@@ -218,7 +224,8 @@
                     <h2>Customer,Delhi</h2>
                 </div>
                 <div class="niche">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet alias laudantium rem impedit quam
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet alias laudantium rem impedit
+                        quam
                         nesciunt, laboriosam sint maiores voluptatem eos saepe labore natus quia quaerat voluptates quo
                         similique quas?</p>
                     <a href="#">
@@ -237,7 +244,8 @@
                     <h2>Customer,Mumbai</h2>
                 </div>
                 <div class="niche">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet alias laudantium rem impedit quam
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet alias laudantium rem impedit
+                        quam
                         nesciunt, laboriosam sint maiores voluptatem eos saepe labore natus quia quaerat voluptates quo
                         similique quas?</p>
                     <a href="#">
@@ -256,7 +264,8 @@
                     <h2>Customer,Ahmedabad</h2>
                 </div>
                 <div class="niche">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet alias laudantium rem impedit quam
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea amet alias laudantium rem impedit
+                        quam
                         nesciunt, laboriosam sint maiores voluptatem eos saepe labore natus quia quaerat voluptates quo
                         similique quas?</p>
                     <a href="#">
@@ -269,7 +278,7 @@
                 </div>
             </div>
         </div>
-    
+
         <button class="button-primary">Load More</button>
     </section>
 
@@ -284,7 +293,7 @@
                 <a href="#"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
-    
+
             <div class="footer-bottom">
                 <div class="phase-2">
                     <h1>Services</h1>
@@ -313,9 +322,20 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
-    <script src="https://kit.fontawesome.com/68f941b034.js" crossorigin="anonymous"></script>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let mainNav1 = document.getElementById('js-menu1');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+
+        navBarToggle.addEventListener('click', function () {
+
+            mainNav.classList.toggle('active');
+            mainNav1.classList.toggle('active');
+        });
+    </script>
+    <!-- <script src="https://kit.fontawesome.com/68f941b034.js" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
