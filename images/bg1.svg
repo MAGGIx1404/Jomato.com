@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" width="1920" height="1080" x="0px" y="0px">
+              
+              <!-- ITEM 0 -->
+<g>
+    <defs>
+        
+        <clipPath id="clip-path-id-viewbox-item-0">
+            <rect x="0.0" y="0.0" width="1920.0" height="1080.0"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(0.0 0.0) rotate(0.0 960.0 540.0) scale(1.0 1.0)">
+      <g clip-path="url(#clip-path-id-viewbox-item-0)" transform="translate(-0.0 -0.0)">
+      
+<rect style="fill:#FCF0E3;" width="1920" height="1080"/>
+
+      </g>
+    </g>
+</g>
+
+<!-- ITEM 1 -->
+<g>
+    <defs>
+        
+        <clipPath id="clip-path-id-viewbox-item-1">
+            <rect x="0.0" y="0.0" width="800.0" height="801.0"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-438.0 -197.0) rotate(0.0 400.0 400.5) scale(1.0 1.0)">
+      <g clip-path="url(#clip-path-id-viewbox-item-1)" transform="translate(-0.0 -0.0)">
+      
+<circle style="fill:#FECE2F;" cx="400" cy="400.725" r="400"/>
+
+      </g>
+    </g>
+</g>
+
+<!-- ITEM 2 -->
+<g>
+    <defs>
+        
+        <clipPath id="clip-path-id-viewbox-item-2">
+            <rect x="0.0" y="0.0" width="800.0" height="801.0"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(1533.0 457.0) rotate(0.0 400.0 400.5) scale(1.0 1.0)">
+      <g clip-path="url(#clip-path-id-viewbox-item-2)" transform="translate(-0.0 -0.0)">
+      
+<circle style="fill:#FECE2F;" cx="400" cy="400.725" r="400"/>
+
+      </g>
+    </g>
+</g>
+
+              </svg>

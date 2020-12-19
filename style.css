@@ -3,29 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* utilities class */
-/* styling */
+
+
 body {
   font-family: "Texturina", serif;
-  width: 80%;
-  height: 1900px;
-  margin-left: 10rem;
   scroll-behavior: smooth;
 }
 
-header {
-  margin-top: 2rem;
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
+
+header {
+  height: 100vh;
+  background-image: url("images/bg.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 15px;
 }
+
 nav .logo img {
   width: 10rem;
   height: auto;
 }
+
 nav .icon {
   width: 30rem;
   font-size: 1.5rem;
@@ -34,140 +43,191 @@ nav .icon {
   flex-direction: row;
   justify-content: space-between;
 }
+
 nav .icon a {
   text-decoration: none;
   color: black;
   transition: all 0.5s ease;
+  font-weight: 400;
 }
+
 nav .icon a:hover {
   color: #51b788;
 }
-nav .btn {
+
+nav .booking {
   width: 20rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-nav .btn a {
+
+nav .booking a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
   transition: all 0.5s ease;
 }
-nav .btn a:hover {
+
+nav .booking a:hover {
   color: #51b788;
 }
-nav .btn h1 {
+
+nav .booking h1 {
   font-size: 2rem;
   transition: all 0.5s ease-in;
 }
-nav .btn h1:hover {
+
+nav .booking h1:hover {
   color: #51b788;
 }
+
 main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  height: 80vh;
 }
+
 main .left-side {
   font-weight: bold;
+  width: 45%;
 }
+
 main .left-side h2 {
   color: #51b788;
+  font-size: 2rem;
 }
+
 main .left-side h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 60px;
+  letter-spacing: 1px;
 }
-.enter-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4rem;
+
+main .left-side p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  line-height: 40px;
+  letter-spacing: 1.1px;
 }
-.enter-page a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: white;
+
+main .right-side {
+  width: 55%;
+}
+
+
+main .right-side img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.best-menu {
+  height: 80vh;
+  padding: 3rem 0;
+  background-image: url("images/bg2.svg");
+  background-position: center;
+}
+
+.best-menu .contact-box {
+  margin: 0 auto;
+}
+
+.button-primary {
+  color: #fff;
+  border: none;
   background-color: #51b788;
-  padding: 1rem;
-  border-radius: 20px;
-  transition: all 0.5s ease;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  outline: none;
+  padding: 10px 1rem;
+  transition: transform .3s ease;
 }
-.enter-page a:hover {
-  color: black;
-  font-weight: bold;
-  background-color: white;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+.button-primary:hover {
+  transform: scale(1.1);
 }
-.enter-page h2 {
+
+.best-menu h2 {
   margin-top: 2rem;
   font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-align: center;
 }
-.enter-page h2 span {
+
+.best-menu h2 span {
   color: #51b788;
 }
-.enter-page h2 span:hover {
+
+.best-menu h2 span:hover {
   color: green;
 }
 
-.mast-mal {
+.best-menu .mast-mal {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
-.mast-mal h4 {
+
+.best-menu .mast-mal h4 {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
   font-weight: bold;
   color: #51b788;
 }
-.mast-mal h1 {
+
+.best-menu .mast-mal h1 {
   font-size: 3rem;
   font-weight: bold;
-}
-.mast-mal p {
-  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.menues {
+.best-menu .mast-mal p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.best-menu .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 4rem;
 }
 
-.menues a {
-  width: 15rem;
-  text-decoration: none;
-  text-align: center;
-  border: #51b788 solid;
-  border-radius: 20px;
-  transition: all 0.5s ease;
-}
-.menues a:hover {
-  border: black solid;
-  background-color: #51b788;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+.best-menu .menu div.menu-item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  transition: all .3s ease;
 }
 
-.menues a > i {
-  font-size: 5rem;
-  color: black;
+.best-menu .menu div.menu-item:hover {
+  box-shadow: 4px 2px 8px 0px rgba(50, 50, 50, 0.75);
 }
-.menues a > h1 {
+
+.best-menu .menu div.menu-item img {
+  max-width: 100%;
+  height: 150px;
+}
+
+.best-menu .menu .menu-item > h1 {
   font-size: 1.5rem;
   color: black;
+  text-align: center;
 }
+
 .load-btn {
-  margin-top: 3rem;
   text-align: center;
 }
 .load-btn a {
@@ -188,9 +248,10 @@ main .left-side h1 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 .load-btn p {
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .load-btn p span {
   color: red;
@@ -198,24 +259,49 @@ main .left-side h1 {
 }
 
 .about {
+  padding: 3rem 0;
+  background-image: url("images/bg2.svg");
+  background-position: center;
+}
+
+.about-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
-.about .about-text h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5rem;
-  font-weight: bold;
+
+.about-container .about-photo {
+  width: 60%;
+}
+
+.about-container .about-photo img {
+  max-width: 90%;
+  height: auto;
+}
+
+.about-container .about-text {
+  width: 40%;
+}
+
+.about-container .about-text h2 {
+  font-size: 2rem;
+  font-weight: 500;
   color: red;
 }
-.about .about-text h1 {
-  font-size: 2rem;
-  font-weight: bold;
+
+.about-container .about-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
-.about .about-text p {
+
+.about-container .about-text p {
   margin-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 .knowlege {
   margin-top: 1.5rem;
@@ -239,201 +325,182 @@ main .left-side h1 {
 }
 
 .collect {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-image: url("images/bg2.svg");
+  background-position: center;
 }
-.collect h2 {
+
+.collect .collect-header {
+  text-align: center;
+}
+
+.collect .collect-header h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2.2rem;
+  font-weight: 500;
   color: red;
 }
-.collect h1 {
+
+.collect .collect-header h1 {
   font-size: 3rem;
-  font-weight: bold;
+  margin-top: 10px;
+  font-weight: 500;
 }
-.collect p {
+
+.collect .collect-header p {
   font-size: 1.5rem;
-  font-weight: bold;
+  margin-top: 10px;
+  font-weight: 400;
 }
-.top-class {
-  margin-top: 2rem;
+
+.top-class div {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
+
 .top-class a {
-  font-size: 2rem;
-  font-weight: bold;
   text-decoration: none;
-  color: white;
-  background-color: #51b788;
-  border-radius: 20px;
-  padding: 1rem;
-  transition: all 0.5s ease;
+  font-size: 1.5rem;
+  color: #000;
+  padding: 10px 1rem;
+  border: 1px solid #ccc;
+  transition: all .3s ease;
 }
+
 .top-class a:hover {
-  color: black;
-  background-color: white;
-  font-weight: bold;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
 }
-.top-class span a {
-  color: black;
-  background-color: white;
-  font-weight: bold;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
+
 .top-foods {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin-top: 3rem;
+  margin-bottom: 2rem;
 }
+
 .top-foods .food-card {
-  width: 18rem;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  transition: all 0.5s ease;
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 2rem 1rem;
+  text-align: center;
 }
+
 .top-foods .food-card:hover {
-  color: white;
-  background-color: #51b788;
-  box-shadow: none;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
 }
+
 .top-foods .food-card img {
-  width: 10rem;
+  width: 60%;
   height: auto;
   margin-top: 1rem;
   border-radius: 50%;
 }
+
 .top-foods .food-card h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
+  margin-top: 10px;
 }
+
 .top-foods .food-card h2 i > img {
   width: 1.2rem;
   height: auto;
+  margin-bottom: 10px;
 }
+
 .top-foods .food-card h4 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
   color: red;
+  margin-bottom: 1rem;
   transition: all 0.5s ease;
 }
-.top-foods .food-card h4:hover {
-  color: white;
-  font-size: 2rem;
-}
+
 .top-foods .food-card a {
-  margin-top: 2rem;
   text-decoration: none;
-  color: white;
-  background-color: #51b788;
-  border-radius: 20px;
-  padding: 0.6rem;
-  transition: all 0.5s ease;
+  font-size: 1.5rem;
+  padding: 10px 1rem;
+  border: 1px solid #ccc;
 }
-.top-foods .food-card a:hover {
-  color: black;
-  background-color: white;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-.top-foods .food-card h3 {
-  font-size: 1.6rem;
-  font-weight: bold;
-  transition: all 0.5s ease;
-}
-.top-foods .food-card h3:hover {
-  color: black;
-  font-size: 2rem;
-}
-.more-dish {
-  margin-top: 4rem;
+
+.collect button + p {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   text-align: center;
 }
-.more-dish a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem;
-  background-color: #51b788;
-  border-radius: 20px;
-  transition: all 0.5s ease;
-}
-.more-dish a:hover {
-  color: black;
-  background-color: white;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
-.more-dish p {
-  margin-top: 3rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-.more-dish p span {
+
+.collect button + p span {
   color: red;
   font-size: 2rem;
 }
-.appp {
+
+.app {
+  background-image: url("images/bg2.svg");
+  background-position: center;
+}
+
+.app .app-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
+  justify-content: space-between;
 }
-.appp .information {
+
+.app .app-container .information {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 40%;
 }
-.appp .information h4 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: "Dancing Script", cursive;
-  color: red;
-}
-.appp .information h1 {
+
+.app .app-container .information h4 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 400;
+  color: red;
+  letter-spacing: 1px;
 }
-.appp .information p {
-  font-size: 1rem;
-  font-weight: bold;
+
+.app .information h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
-.appp .information ol {
-  list-style-type: decimal;
-}
-.appp .information ol > li {
+
+.app .app-container .information p {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
+}
+
+.app .app-container .information ol {
+  list-style-type: decimal;
   margin-top: 1rem;
-  transition: all 0.5s ease;
+}
+
+.app .app-container .information ol > li {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
   border-radius: 20px;
   padding: 1rem;
 }
-.appp .information ol > li:hover {
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  color: white;
-  background-color: #51b788;
+
+.app .app-info {
+  width: 60%;
 }
-.appp .appp-info img {
-  border-radius: 20px;
+
+.app .app-info img {
+  width: 800px;
+  height: 800px;
 }
+
 .down {
   margin-top: 2rem;
   text-align: center;
@@ -441,62 +508,56 @@ main .left-side h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
 }
+
 .down .android {
   text-align: center;
 }
+
 .down .android h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
-.down .android a {
+
+.down a {
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
+  color: #fff;
   background-color: #51b788;
-  border-radius: 20px;
-  padding: 1rem;
-  transition: all 0.5s ease;
+  padding: 10px 1rem;
+  transition: all .3s ease;
 }
+
+.down a:hover {
+  color: blue;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.3);
+}
+
 .down .ios {
   text-align: center;
 }
+
 .down .ios h1 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
-.down .ios a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  background-color: #51b788;
-  border-radius: 20px;
-  padding: 1rem;
-  transition: all 0.5s ease;
-}
-.down a:hover {
-  color: black;
-  background-color: white;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
+
 .certy {
   text-align: center;
-  margin-top: 8rem;
+  background-image: url("images/bg3.svg");
 }
+
 .certy h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  font-family: "Dancing Script", cursive;
-  color: red;
+  font-size: 2rem;
+  font-weight: 500;
 }
+
 .certy h1 {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .review {
@@ -505,109 +566,121 @@ main .left-side h1 {
   align-items: center;
   justify-content: space-around;
   margin-top: 4rem;
+  height: 60vh;
 }
+
 .review .customer {
-  width: 22rem;
-  height: auto;
-  border-radius: 20px;
-  transition: all 0.5s ease;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  width: 400px;
+  padding: 2rem;
+  border-left: 1px solid black;
+  box-shadow: 9px 2px 9px 0px rgba(50, 50, 50, 0.39);
 }
-.review .customer:hover {
-  color: white;
-  background-color: #51b788;
-  box-shadow: none;
-}
+
 .review .customer .upper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+
 .review .customer .upper img {
   border-radius: 50%;
+  margin-bottom: 10px;
 }
+
 .review .customer .upper h1 {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .review .customer .upper h2 {
   font-size: 1.5rem;
-  font-weight: bold;
-  transition: all 0.5s ease;
+  font-weight: 500;
+  color: darkred;
 }
-.review .customer .upper h2:hover {
-  color: black;
-}
+
 .review .customer .niche {
   text-align: center;
 }
+
 .review .customer .niche p {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
 .review .customer .niche a {
   text-decoration: none;
 }
+
 .review .customer .niche a > img {
   width: 1.2rem;
   height: auto;
 }
-.many {
-  text-align: center;
-  margin-top: 4rem;
-}
-.many a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  background-color: #51b788;
-  border-radius: 20px;
-  padding: 1rem;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-.many a:hover {
-  color: black;
-  background-color: white;
-  border: black solid;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
+
 
 /* footer start here */
 
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 8rem;
   background-color: #51b788;
+  margin-top: 2rem;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
 }
+
+footer > div {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 footer .phase-1 {
   text-align: center;
+  width: 30%;
 }
+
 footer .phase-1 p {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
+
 footer .phase-1 a {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 400;
   color: black;
-  transition: all 0.5s ease;
+  margin-right: 5px;
 }
-footer .phase-1 a:hover {
-  color: #51b788;
+
+footer .footer-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 70%;
 }
+
 footer .phase-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
 }
+
+footer .phase-2 h1 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 footer .phase-2 h2 {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 /* end styling */
 
@@ -642,7 +715,7 @@ footer .phase-2 h2 {
   }
 }
 @media(max-width:900px){
-  .container .btn{
+  .container .booking{
     display: none;
   }
   .about  img{
@@ -705,13 +778,13 @@ footer .phase-2 h2 {
   .icon a{
     font-size:0.6rem;
   }
-  .btn a{
+  .booking a{
   display: none;
   }
-  .btn h1{
+  .booking h1{
     display: none;
   }
-  .enter-page  a{
+  .best-menu  a{
     font-size: 0.8rem;
     padding: 0.5rem;
   }
