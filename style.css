@@ -125,7 +125,6 @@ main .right-side img {
 
 .best-menu {
   height: 80vh;
-  padding: 3rem 0;
   background-image: url("images/bg2.svg");
   background-position: center;
 }
@@ -198,15 +197,14 @@ main .right-side img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-top: 3rem;
-  padding-left: 195px;
 }
 
 .best-menu .menu div.menu-item {
+  width: 200px;
   border: 1px solid #ccc;
   transition: all 0.3s ease;
-  margin-right: 39px;
 }
 
 .best-menu .menu div.menu-item:hover {
@@ -683,7 +681,221 @@ footer .phase-2 h2 {
 
 /* media quarry */
 
-@media (max-width: 1335px) {
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .best-menu .menu {
+    padding-left: 0;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width : 1300px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .top-class div {
+    width: 100%;
+  }
+
+  .app {
+    margin-top: 2rem;
+  }
+
+  .app .app-container .information { 
+    width: 50%;
+  }
+
+  .app .app-info {
+    width: 45%;
+  }
+
+  .app .app-info img {
+    width: 100%;
+    height: auto;
+  }
+
+  .certy {
+    margin-top: 2rem;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  header {
+    height: auto;
+  }
+
+  main {
+    display: block;
+    height: auto;
+  }
+
+  main .left-side {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  main .right-side {
+    width: 100%;
+  }
+
+  .best-menu {
+    height: auto;
+  }
+
+  .best-menu .menu {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .best-menu .menu div.menu-item {
+    margin-bottom: 10px;
+  }
+
+  .about-container {
+    display: block;
+    margin-top: 0;
+  }
+
+  .about-container .about-photo {
+    width: 100%;
+  }
+
+  .about-container .about-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .top-foods {
+    flex-wrap: wrap;
+  }
+
+  .top-foods .food-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .app .app-container {
+    display: block;
+  }
+
+  .app .app-container .information {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .app .app-info {
+    width: 100%;
+  }
+
+  .app .app-info img {
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .review {
+    display: block;
+    height: auto;
+  }
+
+  .review .customer {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-left: none;
+    border-top: 1px solid black;
+  }
+
+  footer > div {
+    display: block;
+    height: auto;
+  }
+
+  footer .phase-1 {
+    width: 100%;
+  }
+
+  footer .footer-bottom {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .best-menu {
+    height: auto;
+  }
+
+  .top-class div {
+    flex-wrap: wrap;
+  }
+
+  .top-class a {
+    margin-bottom: 10px;
+  }
+
+  footer .footer-bottom {
+    display: block;
+  }
+
+  footer .phase-2 {
+    align-items: center;
+  }
+}
+
+
+@media (max-width : 484px) {
+  .best-menu .menu div.menu-item {
+    width: 100%;
+  }
+
+  .best-menu .menu div.menu-item img {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .top-class a {
+    margin-bottom: 10px;
+  }
+
+  .certy {
+    background-position: left;
+  }
+}
+
+@media (max-width: 435px) {
+  .review .customer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .review .customer {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+  }
+}
+
+
+/* @media (max-width: 1335px) {
   nav .logo img {
     margin-left: 100px;
   }
@@ -1044,6 +1256,6 @@ footer .phase-2 h2 {
   .footer .phase-2 h2 {
     font-size: 0.6rem;
   }
-}
+} */
 
 /* last end */
